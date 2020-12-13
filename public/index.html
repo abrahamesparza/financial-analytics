@@ -8,19 +8,21 @@
     <canvas id='myChart'></canvas>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
+<!--
     <script>
       var ctx = document.getElementById('myChart').getContext('2d');
+      let chartLabels = ['Bills', 'Groceries', 'Insurance', 'Gas', 'Savings', 'misc.'];
+      let chartData = [1700, 500, 320, 100, 660, 40]
 
       let pieChart0 = new Chart(ctx, {
         type: 'doughnut',
         data: {
-          labels: ['Bills', 'Groceries', 'Insurance', 'Gas', 'Savings', 'misc.'],
+          labels: chartLabels,
           datasets: [{
             label: 'December',
             backgroundColor: ['rgb(179, 223, 255)', 'rgb(204, 178, 255)', 'rgb(97, 176, 229)', 'rgb(255, 218, 112)', 'rgb(205, 255, 220)', 'rgb(255, 205, 205)'],
             borderColor: 'rgb(0, 0, 0)',
-            data: [1700, 500, 320, 100, 660, 40]
+            data: chartData
           }]
         },
         options: {
@@ -39,6 +41,7 @@
           }
         }
       })
-    </script>
+    </script> -->
+    <script src="./bundle.js"></script>
   </body>
 </html>

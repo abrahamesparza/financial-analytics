@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Financial Analytics</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <canvas id='myChart'></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+
+      let pieChart0 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Bills', 'Groceries', 'Insurance', 'Gas', 'Savings', 'misc.'],
+          datasets: [{
+            label: 'December',
+            backgroundColor: ['rgb(179, 223, 255)', 'rgb(204, 178, 255)', 'rgb(97, 176, 229)', 'rgb(255, 218, 112)', 'rgb(205, 255, 220)', 'rgb(255, 205, 205)'],
+            borderColor: 'rgb(0, 0, 0)',
+            data: [1700, 500, 320, 100, 660, 40]
+          }]
+        },
+        options: {
+          responsive: true,
+          layout: {
+            padding: {
+                left: 50,
+                right: 0,
+                top: 25,
+                bottom: 25
+            }
+          },
+          title: {
+            display: true,
+            text: 'January Finance Tracker'
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

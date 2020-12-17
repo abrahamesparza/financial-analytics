@@ -8,11 +8,11 @@ const Header = () => {
   return (
     <div className='main_header'>
       <Button onClick={() => { alert('Home clicked') } }>
-        <HomeIcon fontSize='large' className='home_icon'/>
+        <HomeIcon fontSize='large' className='home_icon' style={{fill: 'white'}}/>
       </Button>
-      <DonutLargeIcon fontSize='large' className='donut_icon' />
+      <DonutLargeIcon fontSize='large' className='donut_icon' style={ { fill: 'white' } }/>
       <Button onClick={() => { alert('Dropdown clicked') } }>
-        <ArrowDropDownIcon fontSize='large' className='dropdown_icon'/>
+        <ArrowDropDownIcon fontSize='large' className='dropdown_icon' style={{fill: 'white'}}/>
       </Button>
     </div>
   )

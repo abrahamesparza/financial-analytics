@@ -1,0 +1,11 @@
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  border-bottom: 3px solid #f9f9f9;
+  padding: 1%;
+}
+.home_icon .dropdown_icon {
+  padding: 20px;
+}
